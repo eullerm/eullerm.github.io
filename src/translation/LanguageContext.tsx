@@ -33,8 +33,14 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
     const params = new URLSearchParams(window.location.search);
     const langParam = params.get("lang") as Language | null;
 
-    if (langParam) {
+    if (langParam && ["portuguese", "english"].includes(langParam)) {
       setLanguage(langParam);
+    } else if (langParam) {
+      params.delete("lang");
+      const newUrl =
+        window.location.pathname +
+        (params.toString() ? `?${params.toString()}` : "");
+      window.history.replaceState({}, "", newUrl);
     }
   }, []);
 
