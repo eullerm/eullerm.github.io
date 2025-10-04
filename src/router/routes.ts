@@ -14,7 +14,7 @@ const rootRoute = createRootRoute({
 
 const homeRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/react-portfolio",
+  path: "/",
   component: Home,
 });
 

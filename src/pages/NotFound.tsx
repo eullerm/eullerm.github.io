@@ -90,7 +90,7 @@ const NotFound: React.FC = () => {
           <Lottie animationData={notFoundData} loop={true} />
         </Title>
         <Message>{t("notFound", language)}</Message>
-        <HomeLink href="/react-portfolio">{t("backHome", language)}</HomeLink>
+        <HomeLink href="/">{t("backHome", language)}</HomeLink>
       </div>
     </Wrapper>
   );

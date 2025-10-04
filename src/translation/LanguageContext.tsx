@@ -26,9 +26,17 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-
     localStorage.setItem(STORAGE_KEY, lang);
   };
+
+  React.useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get("lang") as Language | null;
+
+    if (langParam) {
+      setLanguage(langParam);
+    }
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
