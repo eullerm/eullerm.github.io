@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import Text from "../Text";
-import { Button, IconButton } from "../Button";
-import Select from "../Select";
+import Text from "../../components/Text";
+import { Button, IconButton } from "../../components/Button";
+import Select from "../../components/Select";
 import { useSheets } from "../../context/GoogleSheetContext";
 import { useTheme } from "../../theme";
 import { t } from "../../translation/helper";
@@ -9,7 +9,7 @@ import { useLanguage } from "../../translation/LanguageContext";
 import type { Language } from "../../translation/translations";
 import { AnimatePresence, motion } from "framer-motion";
 import ArrowUpRight from "../../assets/icons/arrowUpRight.svg?react";
-import Skeleton from "../Skeleton";
+import Skeleton from "../../components/Skeleton";
 
 const Section = styled.section`
   display: flex;

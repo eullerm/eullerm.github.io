@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { useSheets } from "../../context/GoogleSheetContext";
 import { t } from "../../translation/helper";
-import Text from "../Text";
+import Text from "../../components/Text";
 import { useLanguage } from "../../translation/LanguageContext";
-import Button from "../Button";
-import Skeleton from "../Skeleton";
+import Button from "../../components/Button";
+import Skeleton from "../../components/Skeleton";
 
 const Section = styled.section`
   display: flex;

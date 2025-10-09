@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { t } from "../../translation/helper";
 import { useLanguage } from "../../translation/LanguageContext";
 import { useSheets } from "../../context/GoogleSheetContext";
-import Text from "../Text";
+import Text from "../../components/Text";
 import ArrowUpRight from "../../assets/icons/arrowUpRight.svg?react";
-import Skeleton from "../Skeleton";
+import Skeleton from "../../components/Skeleton";
 
 const sizeCardMap = {
   sm: "2rem",
