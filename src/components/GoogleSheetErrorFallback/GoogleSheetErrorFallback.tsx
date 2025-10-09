@@ -5,7 +5,7 @@ import Text from "../Text";
 import { useLanguage } from "../../translation/LanguageContext";
 import { t } from "../../translation/helper";
 import React from "react";
-import Timer3D from "../Timer3D";
+import Timer3D from "../3D/Timer3D";
 
 const Wrapper = styled.div`
   display: flex;

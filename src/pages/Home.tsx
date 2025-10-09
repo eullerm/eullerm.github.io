@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import Experiences from "../components/Experiences";
-import Skills from "../components/Skills";
+import Header from "../features/Header";
+import Projects from "../features/Projects";
+import Contact from "../features/Contact";
+import Experiences from "../features/Experiences";
+import Skills from "../features/Skills";
 import styled from "@emotion/styled";
 
 const Container = styled.div`

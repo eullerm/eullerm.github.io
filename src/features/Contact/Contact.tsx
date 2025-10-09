@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Text from "../Text";
+import Text from "../../components/Text";
 import { t } from "../../translation/helper";
 import { useLanguage } from "../../translation/LanguageContext";
 import Github from "../../assets/icons/github.svg?react";
